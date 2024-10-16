@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #faffd1, #a1ffce);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Sometype Mono", monospace;
+}
+
+.display {
+  width: 1080px;
+  height: 480px;
+}
+
+.menu {
+  width: 300px;
+  height: 480px;
+  background-color: aqua;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.menu-chose-mode {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-chose-mode div {
+  display: flex;
+  gap: 5px;
+}
+
+.menu-start {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 80px;
+  height: 30px;
+  background-color: #a1ffce;
+  border: none;
+  border-radius: 5px;
+  font-family: "Sometype Mono", monospace;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.menu-control {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.silde-show {
+  margin-top: 40px;
+  width: 260px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

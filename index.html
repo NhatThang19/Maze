@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Maze Game</title>
+  </head>
+  <body>
+    <div class="display">
+      <canvas id="maze"></canvas>
+    </div>
+    <div class="menu">
+      <h2 class="menu-title">Menu</h2>
+      <div class="menu-chose-mode">
+        <div>
+          <input type="radio" name="checkMode" value="Người chơi" />
+          <p>Người chơi</p>
+        </div>
+        <div>
+          <input type="radio" name="checkMode" value="AI" />
+          <p>Máy chơi</p>
+        </div>
+      </div>
+      <div class="menu-chose-map">
+        <label for="map">Lựa chọn map:</label>
+        <select id="map">
+          <option id="null">--Vui lòng chọn map--</option>
+          <option id="random">Ngẫu nhiên</option>
+          <option id="map1">Map 1</option>
+          <option id="map2">Map 2</option>
+          <option id="map3">Map 3</option>
+          <option id="map4">Map 4</option>
+          <option id="map5">Map 5</option>
+          <option id="map6">Map 6</option>
+          <option id="map7">Map 7</option>
+        </select>
+      </div>
+      <div class="menu-start">
+        <button onClick="startMaze()" class="btn">Bắt đầu</button>
+        <button onClick="reStartMaze()" class="btn">Restart</button>
+      </div>
+      <div class="menu-control">
+        <button onClick="play()" class="btn">Chơi tiếp</button>
+        <button onClick="pause()" class="btn">Tạm dừng</button>
+      </div>
+      <div class="silde-show">
+        <p id="show"></p>
+        <p>Số bước để đi đến đích: <span id="path"></span></p>
+      </div>
+    </div>
+    <script src="./js/funtion.js"></script>
+    <script src="./js/spotAvailable.js"></script>
+    <script src="./js/spot.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
